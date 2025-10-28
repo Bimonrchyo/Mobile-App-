@@ -35,6 +35,7 @@
     android:fontFamily="@font/domine_variablefont_wght"
     />
 
+<!--Garis-->
 <Button
     android:id="@+id/Garis"
     android:layout_width="match_parent"
@@ -58,7 +59,12 @@
     android:text="Selamat datang, di aplikasi resmi SMKN 1 Jakarta..."
     />
 
-<Button
+<androidx.constraintlayout.widget.ConstraintLayout></androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    <Button
+    android:id="@+id/buttonSwipe"
     android:layout_width="200dp"
     android:layout_height="76dp"
     app:layout_constraintStart_toStartOf="@id/textSelamatDatang"
@@ -68,9 +74,13 @@
     android:backgroundTint="@color/blue"
 />
 
-
-
-
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/buttonSwipe"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="100dp"
+    android:text="Mau cari info tentang sekolah ini?, Klik tombol Swipe"
+    />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
