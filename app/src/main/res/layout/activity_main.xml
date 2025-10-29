@@ -10,7 +10,7 @@
     android:background="@drawable/imgbackground"
     >
 
-    <ImageView
+<ImageView
         android:layout_width="370dp"
         android:layout_height="370dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
         android:src="@drawable/logosekolah"
         android:layout_marginTop="40dp"
         >
-    </ImageView>
+</ImageView>
 
 <TextView
     android:id="@+id/smk1"
@@ -30,9 +30,9 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginTop="200dp"
-    android:text="SMKN 1 JAKARTA"
     android:textSize="30sp"
     android:fontFamily="@font/domine_variablefont_wght"
+    android:text="SMKN 1 JAKARTA"
     />
 
 <!--Garis-->
@@ -59,12 +59,7 @@
     android:text="Selamat datang, di aplikasi resmi SMKN 1 Jakarta..."
     />
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-/>
-
-    <Button
+<Button
     android:id="@+id/buttonSwipe"
     android:layout_width="200dp"
     android:layout_height="76dp"
@@ -74,6 +69,32 @@
     android:layout_marginTop="90dp"
     android:backgroundTint="@color/blue"
 />
+<!--text button-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="@id/buttonSwipe"
+    app:layout_constraintEnd_toEndOf="@id/buttonSwipe"
+    app:layout_constraintTop_toTopOf="@id/buttonSwipe"
+    app:layout_constraintBottom_toBottomOf="@id/buttonSwipe"
+    android:layout_marginRight="15dp"
+    android:fontFamily="@font/domine_variablefont_wght"
+    android:textSize="32.5sp"
+    android:textColor="@color/white"
+    android:text="SWIPE"
+    />
+
+<ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    app:layout_constraintStart_toStartOf="@id/buttonSwipe"
+    app:layout_constraintEnd_toEndOf="@id/buttonSwipe"
+    app:layout_constraintTop_toTopOf="@id/buttonSwipe"
+    app:layout_constraintBottom_toBottomOf="@id/buttonSwipe"
+    android:layout_marginLeft="140dp"
+    android:src="@drawable/arrow"
+    >
+</ImageView>
 
 <TextView
     android:layout_width="wrap_content"
