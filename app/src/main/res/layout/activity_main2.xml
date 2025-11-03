@@ -46,63 +46,54 @@
         android:backgroundTint="@color/blue"
         />
 
-    <TextView
-        android:id="@+id/textSelamatDatang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/Garis"
+    <!--  Register  -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="321dp"
+        android:layout_height="61.91dp"
         app:layout_constraintStart_toStartOf="@id/Garis"
         app:layout_constraintEnd_toEndOf="@id/Garis"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/domine_variablefont_wght"
-        android:textSize="15sp"
-        android:text="Selamat datang, di aplikasi resmi SMKN 1 Jakarta..."
-        />
-
-    <Button
-        android:id="@+id/buttonSwipe"
-        android:layout_width="200dp"
-        android:layout_height="76dp"
-        app:layout_constraintStart_toStartOf="@id/textSelamatDatang"
-        app:layout_constraintEnd_toEndOf="@id/textSelamatDatang"
-        app:layout_constraintTop_toTopOf="@id/textSelamatDatang"
-        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/Garis"
         android:backgroundTint="@color/blue"
+        android:layout_marginTop="40dp"
         />
-    <!--text button-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/buttonSwipe"
-        app:layout_constraintEnd_toEndOf="@id/buttonSwipe"
-        app:layout_constraintTop_toTopOf="@id/buttonSwipe"
-        app:layout_constraintBottom_toBottomOf="@id/buttonSwipe"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/domine_variablefont_wght"
-        android:textSize="32.5sp"
+        app:layout_constraintTop_toTopOf="@id/register"
+        app:layout_constraintBottom_toBottomOf="@id/register"
+        app:layout_constraintStart_toStartOf="@id/register"
+        app:layout_constraintEnd_toEndOf="@id/register"
         android:textColor="@color/white"
-        android:text="SWIPE"
+        android:textSize="20sp"
+        android:fontFamily="@font/domine_variablefont_wght"
+        android:text="Register"
         />
 
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        app:layout_constraintStart_toStartOf="@id/buttonSwipe"
-        app:layout_constraintEnd_toEndOf="@id/buttonSwipe"
-        app:layout_constraintTop_toTopOf="@id/buttonSwipe"
-        app:layout_constraintBottom_toBottomOf="@id/buttonSwipe"
-        android:layout_marginLeft="140dp"
-        android:src="@drawable/arrow"
-        >
-    </ImageView>
+    <!--  Login  -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="321dp"
+        android:layout_height="61.91dp"
+        app:layout_constraintStart_toStartOf="@id/register"
+        app:layout_constraintEnd_toEndOf="@id/register"
+        app:layout_constraintTop_toBottomOf="@id/register"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="25dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/buttonSwipe"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"
-        android:text="Mau cari info tentang sekolah ini?, Klik tombol Swipe"
+        app:layout_constraintTop_toTopOf="@id/login"
+        app:layout_constraintBottom_toBottomOf="@id/login"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/domine_variablefont_wght"
+        android:text="Login"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
