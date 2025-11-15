@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@id/edit3"
-        app:layout_constraintStart_toStartOf="@id/edit4"
+        app:layout_constraintStart_toStartOf="@id/edit3"
         android:fontFamily="@font/domine_variablefont_wght"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -138,46 +138,44 @@
         android:text="Password"
         />
 
-    <EditText
-        android:id="@+id/edit4"
+    <!--  Hint PW  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hintPw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="50dp"
+        app:passwordToggleEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/password"
-        android:textColor="@color/black"
-        android:fontFamily="@font/domine_variablefont_wght"
-        android:textSize="16sp"
-        android:padding="10dp"
-        android:paddingStart="2.5dp"
-        android:inputType="textPassword"
-        android:gravity="start"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
-        android:ellipsize="end"
-        android:hint="Masukkan Password Anda"
-        />
+        >
 
-    <!--  Password hint  -->
-    <ImageView
-        android:id="@+id/hintPw"
-        android:layout_width="35dp"
-        android:layout_height="20dp"
-        android:src="@drawable/mata"
+    <!--    Input Text    -->
+        <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintEnd_toEndOf="@id/edit4"
-        android:layout_marginRight="20dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="100dp"
+        android:hint="Masukkan Password Anda"
+        android:inputType="textPassword"
+        android:fontFamily="@font/domine_variablefont_wght"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
 <!--Button-->
     <Button
         android:id="@+id/btn"
         android:layout_width="210dp"
         android:layout_height="76dp"
-        app:layout_constraintStart_toStartOf="@id/edit4"
-        app:layout_constraintEnd_toEndOf="@id/edit4"
-        app:layout_constraintTop_toTopOf="@id/edit4"
-        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@id/hintPw"
+        app:layout_constraintEnd_toEndOf="@id/hintPw"
+        app:layout_constraintTop_toTopOf="@id/hintPw"
+        android:layout_marginTop="115dp"
         android:backgroundTint="@color/blue"
         android:text="Continue"
         android:textSize="32.5sp"
@@ -207,7 +205,7 @@
         android:text="Back"
         android:textSize="16sp"
         android:fontFamily="@font/domine_variablefont_wght"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
         />
 
