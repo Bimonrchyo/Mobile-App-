@@ -156,16 +156,17 @@
         android:layout_marginTop="5dp"
         android:ellipsize="end"
         android:hint="Masukkan Password Anda"
-
         />
-<!--  Password hint  -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:layout_constraintTop_toTopOf="@id/password"
-        app:layout_constraintEnd_toEndOf="@+id/edit4"
-        android:layout_marginRight="46dp"
+
+    <!--  Password hint  -->
+    <ImageView
+        android:id="@+id/hintPw"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:src="@drawable/mata"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintEnd_toEndOf="@id/edit4"
+        android:layout_marginRight="20dp"
         />
 
 <!--Button-->
@@ -206,7 +207,8 @@
         android:text="Back"
         android:textSize="16sp"
         android:fontFamily="@font/domine_variablefont_wght"
-
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
         />
 
 
