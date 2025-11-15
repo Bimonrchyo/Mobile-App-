@@ -28,6 +28,14 @@
             android:name=".MainActivity3"
             android:exported="true"
             />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true"
+            />
 
     </application>
 
