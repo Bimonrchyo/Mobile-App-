@@ -205,7 +205,7 @@
         android:text="Back"
         android:textSize="16sp"
         android:fontFamily="@font/domine_variablefont_wght"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
         />
 

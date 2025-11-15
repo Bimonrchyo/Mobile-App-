@@ -19,29 +19,6 @@ class MainActivity3: AppCompatActivity() {
         back.setOnClickListener {
             val intent = Intent (this, MainActivity2 ::class.java)
             startActivity(intent)
-
-            //toggle hide&show
-            var isVisible = false
-
-            val edit4 = findViewById<EditText>(R.id.edit4)
-            val toggle = findViewById<ImageView>(R.id.hintPw)
-
-            toggle.setOnClickListener {
-                if(isVisible){
-                    //hide
-                    edit4.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-                    toggle.setImageResource(R.drawable.matanutup)
-                } else {
-                    // show
-                    edit4.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
-                    toggle.setImageResource(R.drawable.mata)
-                }
-
-                // cursor at the end of text
-                edit4.setSelection(edit4.text.length)
-
-                isVisible = !isVisible
-            }
         }
     }
 }
