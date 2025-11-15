@@ -1,9 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SMKN1App" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.SMKN1App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- default background (light) -->
+        <item name="android:windowBackground">@color/white</item>
     </style>
-
-    <style name="Theme.SMKN1App" parent="Base.Theme.SMKN1App" />
 </resources>
