@@ -20,6 +20,15 @@ class MainActivity3: AppCompatActivity() {
             val intent = Intent (this, MainActivity2 ::class.java)
             startActivity(intent)
         }
+
+            //continue
+            val swipe =findViewById<Button>(R.id.btn)
+
+            swipe.setOnClickListener {
+            val intent2 = Intent (this, JurusanActivity ::class.java)
+                startActivity(intent2)
+
+        }
     }
 }
 

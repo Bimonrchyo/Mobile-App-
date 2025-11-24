@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4fa5d5">
+
+    <ImageView
+        android:id="@+id/imageSekolah"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gedungsmk1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jurusan"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Rekayasa Perangkat Lunak"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Desain Pemodelan dan Informasi Bangunan"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Sistem Informatika Jaingan dan Aplikasi"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Teknik Komuikasi dan Perumahan"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Teknik Komputer dan Jaringan"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Teknik Pemesinan"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Desain Komunikasi Visual"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Desain Gambar Mesin"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Teknik Instalasi Tenaga Listrik"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Teknik Kendaraan Ringan"
+                android:background="@drawable/bg_rounded"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottom_nav"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        />
+
+</LinearLayout>
