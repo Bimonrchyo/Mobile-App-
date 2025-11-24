@@ -39,7 +39,7 @@
 
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Rekayasa Perangkat Lunak"
@@ -47,7 +47,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Desain Pemodelan dan Informasi Bangunan"
@@ -63,7 +63,7 @@
 
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Sistem Informatika Jaingan dan Aplikasi"
@@ -71,7 +71,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Teknik Komuikasi dan Perumahan"
@@ -87,7 +87,7 @@
 
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Teknik Komputer dan Jaringan"
@@ -95,7 +95,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Teknik Pemesinan"
@@ -111,7 +111,7 @@
 
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Desain Komunikasi Visual"
@@ -119,7 +119,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Desain Gambar Mesin"
@@ -135,7 +135,7 @@
 
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Teknik Instalasi Tenaga Listrik"
@@ -143,7 +143,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:layout_height="52dp"
                 android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:text="Teknik Kendaraan Ringan"
