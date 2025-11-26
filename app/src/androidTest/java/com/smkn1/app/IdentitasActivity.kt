@@ -1,5 +1,7 @@
 package com.smkn1.app
 
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -8,31 +10,40 @@ class IdentitasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_identitas)
-
-        // Halaman ini = PROFILE
-        setupFooter("profile")
-    }
-
-    // =====================================
-    // FOOTER LOGIC (dipakai semua halaman)
-    // =====================================
-    private fun setupFooter(active: String) {
+        setContentView(R.layout.activity_identitas)   // <--- ganti ke nama XML kamu
 
         val navHome = findViewById<ImageView>(R.id.nav_home)
         val navBook = findViewById<ImageView>(R.id.nav_book)
         val navProfile = findViewById<ImageView>(R.id.nav_profile)
 
-        // Reset semua jadi hitam
-        navHome.setColorFilter(getColor(R.color.black))
-        navBook.setColorFilter(getColor(R.color.black))
-        navProfile.setColorFilter(getColor(R.color.black))
+        // ================= ICON YANG AKTIF =================
+        setActiveFooter()
 
-        // Kasih warna biru ke icon yang aktif
-        when (active) {
-            "home" -> navHome.setColorFilter(getColor(R.color.blue))
-            "book" -> navBook.setColorFilter(getColor(R.color.blue))
-            "profile" -> navProfile.setColorFilter(getColor(R.color.blue))
-        }
+        // ================= FOOTER TIDAK PINDAH HALAMAN =================
+        navHome.setOnClickListener { /* tidak pindah */ }
+        navBook.setOnClickListener { /* tidak pindah */ }
+        navProfile.setOnClickListener { /* tidak pindah */ }
+
+    }
+
+    // ======================================================
+    //  Fungsi untuk menggelapkan icon profile sebagai aktif
+    // ======================================================
+    private fun setActiveFooter() {
+
+        val navHome = findViewById<ImageView>(R.id.nav_home)
+        val navBook = findViewById<ImageView>(R.id.nav_book)
+        val navProfile = findViewById<ImageView>(R.id.nav_profile)
+
+        // reset semua
+        navHome.clearColorFilter()
+        navBook.clearColorFilter()
+        navProfile.clearColorFilter()
+
+        // warna gelap (50%)
+        val darken = PorterDuffColorFilter(0x80000000.toInt(), PorterDuff.Mode.SRC_ATOP)
+
+        // aktif = profile
+        navProfile.colorFilter = darken
     }
 }
