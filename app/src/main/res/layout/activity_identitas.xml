@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_identitas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_biru">
+
+    <!-- ================== SCROLL VIEW ================== -->
+    <ScrollView
+        android:id="@+id/scrollArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- FOTO SEKOLAH -->
+            <ImageView
+                android:id="@+id/identitas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img_1"
+                android:scaleType="centerCrop" />
+
+            <!-- JUDUL -->
+            <TextView
+                android:id="@+id/judul_identitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identitas Sekolah"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="16dp" />
+
+            <!-- NAMA SEKOLAH -->
+            <TextView
+                android:id="@+id/nama_sekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Sekolah :\nSMK Negeri 1 Jakarta"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp" />
+
+            <!-- NPSN -->
+            <TextView
+                android:id="@+id/npsn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPSN :\n20100143"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- NSS -->
+            <TextView
+                android:id="@+id/nss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NSS :\n321016002004"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- NIS -->
+            <TextView
+                android:id="@+id/nis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIS :\n40056"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- ALAMAT -->
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Sekolah :\nJl. Budi Utomo No. 7 RT.004 RW.008, Kel. Pasar Baru\nKec. Sawah Besar Jakarta Pusat\nProvinsi Daerah Khusus Ibukota Jakarta 10710"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- KONTAK -->
+            <TextView
+                android:id="@+id/kontak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telpon/Fax: 021-3813630 / (021) 350 4091\nEmail: smkn1jakarta@gmail.com"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- SOSMED -->
+            <TextView
+                android:id="@+id/sosmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook : smkn1jakarta\nTwitter : smkn1jakarta\nYoutube : smkn1jakarta\nInstagram : smkn1jakarta"
+                android:textSize="16sp"
+                android:layout_margin="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ================== FOOTER ================== -->
+    <LinearLayout
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/img_2"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/img_4" />
+
+        <ImageView
+            android:id="@+id/nav_book"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/img_5" />
+
+        <ImageView
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/img_3" />
+    </LinearLayout>
+
+</RelativeLayout>
