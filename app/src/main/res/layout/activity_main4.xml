@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    tools:theme="@style/Theme.SMKN1App"
     android:background="@drawable/imgbackground"
     >
 
@@ -103,7 +104,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--Button-->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn"
         android:layout_width="210dp"
         android:layout_height="76dp"
@@ -117,6 +118,7 @@
         android:paddingEnd="40dp"
         android:paddingBottom="10dp"
         android:fontFamily="@font/domine_variablefont_wght"
+        android:textColor="@color/white"
         />
 
     <ImageView
@@ -130,7 +132,7 @@
         android:src="@drawable/arrow"
         />
     <!--Back-->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back"
         android:layout_width="100dp"
         android:layout_height="46dp"
@@ -142,6 +144,7 @@
         android:fontFamily="@font/domine_variablefont_wght"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
         />
 
 
